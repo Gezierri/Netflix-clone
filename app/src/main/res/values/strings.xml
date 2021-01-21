@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Netflix Clone</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="ajuda">Precisa de ajuda?</string>
+    <string name="inscrever">Novo por aqui? Inscreva-se agora.</string>
+    <string name="menu_sair">Sair</string>
+    <string name="titulo_series">Séries</string>
+    <string name="descricao">
+        O mutante Geralt de Rívia é um caçador de monstros que luta para encontrar seu lugar num
+        mundo onde as pessoas muitas vezes são mais perversar que as criaturas selvagens.
+    </string>
+    <string name="elenco">
+        Estrelando: Henry Cavill, Anya Chalotra, Freya Allan
+    </string>
+    <string name="criacao">
+        Criação: Lauren Schmidt Hissrich
+    </string>
+</resources>

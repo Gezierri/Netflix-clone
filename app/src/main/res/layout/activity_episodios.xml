@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EpisodiosActivity">
+
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/videoPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/play"
+        />
+
+    <TextView
+        android:id="@+id/id_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Witcher"
+        android:textColor="@color/white"
+        android:layout_below="@+id/video"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/id_subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="93% relevante"
+        android:layout_below="@+id/id_titulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/verde"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019"
+        android:layout_below="@+id/id_titulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="160dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Temporada"
+        android:layout_below="@+id/id_titulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="220dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/id_descricao"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/descricao"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/id_subtitulo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/id_estrelando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/elenco"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/id_descricao"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/id_criacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/criacao"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/id_estrelando"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_add"
+        android:layout_below="@id/id_criacao"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_add"
+        android:layout_below="@id/id_criacao"
+        android:layout_toEndOf="@id/add_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_compartilhar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_share"
+        android:layout_below="@id/id_criacao"
+        android:layout_toEndOf="@id/add_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        />
+    
+    <TextView
+        android:id="@+id/id_miinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Lista"
+        android:textSize="14sp"
+        android:layout_below="@id/add_1"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/id_classifique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classifique"
+        android:textSize="14sp"
+        android:layout_below="@id/add_2"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/id_miinhaLista"/>
+
+    <TextView
+        android:id="@+id/compartilhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classifique"
+        android:textSize="14sp"
+        android:layout_below="@id/add_2"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/id_classifique"/>
+
+    <TextView
+        android:id="@+id/episodios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episódios"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/id_miinhaLista"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/trailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailer e mais"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/id_miinhaLista"
+        android:layout_toEndOf="@+id/episodios"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/similares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Similares"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/id_miinhaLista"
+        android:layout_toEndOf="@+id/trailer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
+</ScrollView>
